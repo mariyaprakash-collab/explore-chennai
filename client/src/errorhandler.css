@@ -1,0 +1,34 @@
+.error-container {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    background:transparent;
+}
+
+.error-container h1 {
+    font-size: 3rem;
+    color: crimson;
+}
+
+.error-container h3 {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.error-container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #0b7285;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.error-container a:hover {
+    opacity: 0.9;
+}

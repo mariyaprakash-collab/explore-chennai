@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.mheader {
+  background:transparent;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  padding-inline: 30px;
+  top: 0;
+  z-index: 1000;
+  height: 64px;
+  box-shadow: 0 0 3px black;
+}
+
+.titletext {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+  flex-shrink:0;
+  background: none;
+}
+
+.titletext h2 {
+  color:white;
+  font-size:1.4rem;
+  font-family:"poppins";
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.titletext h3 {
+  color:white;
+  font-size: 1rem;
+  font-family:"poppins";
+  font-weight: 600;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  list-style: none;
+  height: 64px;
+  min-width: 0;
+  overflow-x:auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none;
+  min-width:0;
+  background: transparent;
+}
+
+.navbar a {
+  text-decoration: none;
+  flex-shrink:0;
+  color: white;
+  font-size: 0.82rem;
+  font-weight: 500;
+  font-family: "manrope",sans-serif;
+  letter-spacing: 0.5px;
+  padding: 0 1rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 0;
+}
+
+.navbar a:hover {
+  color:orangered;
+}
+
+.navbar a.active{
+  color:orangered;
+  border-color:orangered;
+}
+
+@media (max-width: 768px) {
+  .mheader{
+    padding-inline:15px;
+    gap:15px;
+  }
+
+  .titletext h2{
+    font-size:1.1rem;
+  }
+
+  .titletext h3{
+    font-size:0.85rem;
+  }
+
+  .navbar{
+    flex:1;
+    overflow-x:auto;
+    white-space:nowrap;
+  }
+
+  .navbar a{
+    flex-shrink:0;
+    padding:0 0.75rem;
+    font-size:0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mheader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: sticky;
+    top:0;
+    padding: 12px 15px;
+    height: auto;
+    background: rgba(22, 22, 26, 0.9);
+    backdrop-filter: blur(10px);
+  }
+
+  .titletext{
+    width:100%;
+  justify-content: center;
+  }
+
+  .titletext h2{
+    font-size:0.95rem;
+  }
+
+  .titletext h3{
+    font-size:0.75rem;
+  }
+
+  .navbar {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .navbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .navbar a{
+    height: 40px;
+    padding: 0 0.7rem;
+    font-size: 0.72rem;
+  }
+}

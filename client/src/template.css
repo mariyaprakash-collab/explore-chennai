@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.template-body{
+    padding:20px 100px;
+}
+
+.template-body h2{
+    font-family: "Poppins", sans-serif;
+    color:#fffffe;
+}
+
+.template-body p{
+    font-family: "manrope",sans-serif;
+    color:#abd1c6;
+}
+
+.place{
+    justify-content:space-between;
+    display:flex;
+    flex-direction: column;
+    background-color:#242629;
+    gap:15px;
+    padding:20px 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.images{
+    width:100%;
+}
+
+.images img{
+    width:100%;
+    max-height:500px;
+    object-fit:cover;
+    border-radius:20px;
+    display:block;
+}
+
+.tips ul{
+    color:#abd1c6;
+    margin-left:30px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.location{
+    margin-top:10px;
+}
+
+.location a{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration:none;
+    color:#0c3344;
+    font-size:1.2rem;
+    font-family:'manrope',sans-serif;
+    background-color:aliceblue;
+    padding:5px 10px;
+    border-radius:5px;
+    transition:0.1s;
+}
+
+.location a:hover{
+    background-color: orangered;
+    color:white;
+    border-radius:20px;
+}
+
+.material-symbols-outlined{
+    font-size: 22px;
+    line-height: 1;
+}
+
+@media (max-width:768px){
+    .template-body{
+        padding:20px;
+    }
+
+    .place{
+        padding:15px;
+    }
+
+    .template-body h2{
+        font-size:1.3rem;
+    }
+
+    .location a{
+        font-size:0.9rem;
+        background-color: orangered;
+        color:white;
+        border-radius:20px;
+    }
+
+    .tips ul{
+        font-size: 0.9rem;
+    }
+
+    .template-body p{
+        font-size:0.9rem;
+    }
+
+}
