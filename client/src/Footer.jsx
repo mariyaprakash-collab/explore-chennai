@@ -13,7 +13,7 @@ function Footer(){
                 >
                 LinkedIn
                 </a>
-                <a  href=""
+                <a  href="https://github.com/mariyaprakash-collab"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
