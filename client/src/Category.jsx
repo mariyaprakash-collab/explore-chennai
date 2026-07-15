@@ -13,7 +13,7 @@ function Category({ category }) {
 
   useEffect(() => {
   setLoading(true)
-  fetch(`http://localhost:5000/places/${category}`)
+  fetch(`${import.meta.env.VITE_API_URL}/places/${category}`)
     .then(async(res)=>{
       const data = await res.json();
       if (!res.ok) {
