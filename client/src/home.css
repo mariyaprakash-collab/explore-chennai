@@ -94,7 +94,7 @@
 .paras{
     display:flex;
     flex-direction:column;
-    gap:50px;
+    gap:30px;
     padding-left:100px;
     padding-right: 100px;
     align-items: center;
@@ -324,7 +324,7 @@
     }
 
     .headline p{
-        font-size:0.95rem;
+        font-size:0.85rem;
     }
 
     .facts{
@@ -337,10 +337,11 @@
     }
 
     .history p{
-        font-size:0.95rem;
+        font-size:0.85rem;
     }
 
     .banner a{
         padding:15px 10px;
+        font-size: 0.75rem;
     }
 }
