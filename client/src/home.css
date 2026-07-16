@@ -5,8 +5,12 @@
     padding:0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
+    -ms-overflow-style: none; 
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
 
 .home-body{
     background-color:#16161a;
@@ -72,10 +76,11 @@
     animation:slideUp 0.6s ease-out;
     box-shadow: 0px 10px 40px  rgba(0, 0, 0, 0.5);
     border-radius: 22px;
+    transition: 0.6s;
 }
 
 .facts:hover{
-    box-shadow: 0px 4px 20px 0px rgb(255, 255, 255);
+    box-shadow: 0px 10px 40px  rgba(131, 131, 131, 0.5);
 }
 
 .facts ul{

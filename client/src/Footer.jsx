@@ -5,7 +5,7 @@ function Footer(){
         <div className="footer">
             <div>Made with ❤️ for Chennai — நம்ம ஊர்</div>
             <div>Explore · Discover · Experience the Gateway of South India</div>
-            <div>developed by MARIYA PRAKASH - an emerging full stack developer</div>
+            <div>developed by MARIYA PRAKASH - an emerging developer</div>
             <div className="links">
                 <a  href="https://www.linkedin.com/in/mariya-prakash-a-872b03413"
                     target="_blank"

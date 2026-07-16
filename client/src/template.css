@@ -23,6 +23,7 @@
 
 .place{
     justify-content:space-between;
+    gap:15px;
     display:flex;
     flex-direction: column;
     background-color:#242629;
@@ -53,6 +54,7 @@
 }
 
 .location a{
+    margin-top: 10px;
     display: inline-flex;
     align-items: center;
     text-decoration:none;
