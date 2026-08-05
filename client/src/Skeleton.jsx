@@ -3,6 +3,7 @@ import "./skeleton.css";
 function Skeleton() {
   return (
     <div className="container">
+      <div className="text">This may take a few second...please wait</div>
     <div className="skeleton-card">
       <div className="skeleton-image"></div>
 
