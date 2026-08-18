@@ -6,7 +6,7 @@ function Login(){
     const [password,setPass]=useState("");
     
     return(
-        <div>
+        
             <div className="loginpage">
                 <div className="loginform">
                     <div className="loginhead">
@@ -33,7 +33,7 @@ function Login(){
                     </form>
                 </div>
             </div>
-        </div>
+        
     )
 };
 export default Login;
