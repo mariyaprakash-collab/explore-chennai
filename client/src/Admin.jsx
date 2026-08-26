@@ -5,7 +5,6 @@ import "./login.css";
 
 function Admin() {
     const [formname, setFormname] =useState("login")
-    console.log(formname)
     return(
         <div className="page">
             <div  className="options">
