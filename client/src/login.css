@@ -1,56 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.loginpage{
-    display:flex;
-    height: 100vh;
-    justify-content: center;
+
+.page {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding-top: 130px;
+    gap:50px;
     background-color:#16161a;
 }
 
-.loginhead{
-    color:orangered;
-    font-family: "poppins";
-}
-
-.loginform{
+.form{
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:30px;
-    background-color: #242629;
-    padding:70px 70px;
-    border-radius: 30px;
+    height: 100vh;
+    gap:25px;
+    background-color:#16161a;
+}
+
+.heading h2{
+    font-family: "poppins";
+    color: orangered;
+    text-align: center;
 }
 
 form{
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap:20px;
 }
 
+.inputtag{
+    display: flex;
+    flex-direction: column;
+}
+
 input{
-    padding:10px 80px;
-    padding-left:20px;
+    padding:10px 10px;
+    width:300px;
+    border:1px solid black;
     border-radius: 20px;
-    border:1px solid orangered;
+    background-color:#242629;
+    color:#fffffe;
     font-family: "manrope";
-    background-color:#16161a;
-    color:white;
 }
 
-.submit{
-    text-align: center;
-    padding:10px 40px;
+label{
+    color:#fffffe;
+    font-family: "manrope";
+    font-size: small;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background-color: orangered;
+    border:1px solid black;
+    padding:10px 15px;
+    width:100%;
+    border-radius: 10px;
+    /* font-family: "manrope"; */
+    color:black;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+}
+
+.options h2{
+    font-family: "poppins";
     cursor: pointer;
-    width:fit-content;
-    font-family: "manrope";
-    color:white;
-    background-color:#29292e;
 }
 
-.submit:hover{
-    background-color:orangered;
+.options{
+    display: flex;
+    gap:50px;
 }

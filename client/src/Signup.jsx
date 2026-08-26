@@ -1,18 +1,19 @@
 import {useFormik} from "formik";
 import "./login.css"
 
-const Login = () =>{
-    const {values, handleChange, handleSubmit} = useFormik({
+const register = () =>{
+    const {values, handleChange, handleSubmit, handleReset} = useFormik({
         initialValues :{
             email : "",
             password : "",
+            confirmpassword : "",
         },
     });
 
     return(
         <div className="form">
                 {/* <div className="heading">
-                    <h2>LOGIN</h2>
+                    <h2>Create an Admin</h2>
                 </div> */}
                 <div>
                     <form>
@@ -35,13 +36,23 @@ const Login = () =>{
                                 id="password"
                                 placeholder="password"
                             />
-                        </div>                  
+                        </div>
+                        <div className="inputtag">
+                            <label htmlFor="confirmpassword">Confirm your password</label>
+                            <input
+                                value={values.confirmpassword}
+                                onChange={handleChange}
+                                type="password"
+                                id="confirmpassword"
+                                placeholder="confirm password"
+                            />                  
+                        </div>
                         <div className="buttons">
-                            <button type="submit">Login</button>
+                            <button type="submit">Create</button>
                         </div>
                     </form>
                 </div>
         </div>
     )
 }
-export default Login;
+export default register;
