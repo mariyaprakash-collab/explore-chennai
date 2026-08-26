@@ -11,9 +11,6 @@ const Login = () =>{
 
     return(
         <div className="form">
-                {/* <div className="heading">
-                    <h2>LOGIN</h2>
-                </div> */}
                 <div>
                     <form>
                         <div className="inputtag">

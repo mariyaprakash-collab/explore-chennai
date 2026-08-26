@@ -1,6 +1,6 @@
 import {useState} from "react";
-import Login from "./login";
-import Register from "./signup";
+import Login from "./Login";
+import Register from "./Signup";
 import "./login.css";
 
 function Admin() {

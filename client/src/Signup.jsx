@@ -12,9 +12,6 @@ const register = () =>{
 
     return(
         <div className="form">
-                {/* <div className="heading">
-                    <h2>Create an Admin</h2>
-                </div> */}
                 <div>
                     <form>
                         <div className="inputtag">
