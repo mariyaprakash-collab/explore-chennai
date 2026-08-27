@@ -7,7 +7,7 @@ function Admin() {
     const [formname, setFormname] =useState("login")
     return(
         <div className="page">
-            <div  className="options">
+            <div  className="view">
                 <h2 
                     onClick={()=>{setFormname("login")}}
                     style={{color : formname === "login" ? "orangered" : "#555658"}}

@@ -72,12 +72,12 @@ button{
     justify-content: center;
 }
 
-.options h2{
+.view h2{
     font-family: "poppins";
     cursor: pointer;
 }
 
-.options{
+.view{
     display: flex;
     gap:50px;
 }
