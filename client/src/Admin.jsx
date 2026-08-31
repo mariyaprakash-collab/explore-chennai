@@ -1,10 +1,13 @@
 import {useState} from "react";
 import Login from "./Login";
 import Register from "./Signup";
+import Category from "./Category";
 import "./login.css";
+
 
 function Admin() {
     const [formname, setFormname] =useState("login")
+    const [isadmin, setIsadmin] = useState(false)
     return(
         <div className="page">
             <div  className="view">
