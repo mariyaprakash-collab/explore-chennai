@@ -18,6 +18,11 @@ app.get("/", (req, res) => {
 });
 
 app.use("/places",placeRoutes);
+app.post("/admin", (req,res) => {
+  const formdata= req.body;
+  console.log("recieved data:",formdata)
+  res.status(200).json({message:"recieved succesfully" , data:formdata})
+})
 
 const PORT = process.env.PORT || 5000;
 

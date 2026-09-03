@@ -1,5 +1,6 @@
 import {useFormik} from "formik";
 import "./login.css"
+import axios from "axios";
 
 const Login = () =>{
     const {values, handleChange, handleSubmit} = useFormik({
@@ -7,8 +8,18 @@ const Login = () =>{
             email : "",
             password : "",
         },
+        onSubmit: async(values,{setSubmitting,resetForm}) => {
+            try{
+                const response = await axios.post(`${import.meta.env.VITE_API_URL}/admin`,values);
+                console.log("response:",response.data);
+                resetForm();
+            }
+            catch{
+                console.error("error msg:",error);
+            }
+        }
     });
-
+    
     return(
         <div className="form">
                 <div>
