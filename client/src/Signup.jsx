@@ -8,10 +8,20 @@ const register = () =>{
             password : "",
             confirmpassword : "",
         },
+        onSubmit: async(values,{setSubmitting,resetForm}) => {
+            try{
+                const response = await axios.post(`${import.meta.env.VITE_API_URL}/admin`,values);
+                console.log("response:",response.data);
+                resetForm();
+            }
+            catch{
+                console.error("error msg:",error);
+            }
+        }
     });
 
     return(
-        <div className="form">
+        <div className="form" onSubmit={handleSubmit}>
                 <div>
                     <form>
                         <div className="inputtag">
