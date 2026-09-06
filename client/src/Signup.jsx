@@ -11,7 +11,7 @@ const register = () =>{
         },
         onSubmit: async(values,{setSubmitting,resetForm}) => {
             try{
-                const response = await axios.post(`${import.meta.env.VITE_API_URL}/admin`,values);
+                const response = await axios.post(`${import.meta.env.VITE_API_URL}/admin/signup`,values);
                 console.log("response:",response.data);
                 resetForm();
             }

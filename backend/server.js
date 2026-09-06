@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const connectDB = require("./config/db");
 const placeRoutes = require("./routes/placeRoutes");
+const adminroutes = require("./routes/adminroutes");
 
 dotenv.config();
 
@@ -18,11 +19,8 @@ app.get("/", (req, res) => {
 });
 
 app.use("/places",placeRoutes);
-app.post("/admin", (req,res) => {
-  const formdata= req.body;
-  console.log("recieved data:",formdata)
-  res.status(200).json({message:"recieved succesfully" , data:formdata})
-})
+
+app.post("/admin",adminroutes);
 
 const PORT = process.env.PORT || 5000;
 

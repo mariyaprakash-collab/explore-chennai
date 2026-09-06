@@ -10,7 +10,7 @@ const Login = () =>{
         },
         onSubmit: async(values,{setSubmitting,resetForm}) => {
             try{
-                const response = await axios.post(`${import.meta.env.VITE_API_URL}/admin`,values);
+                const response = await axios.post(`${import.meta.env.VITE_API_URL}/admin/login`,values);
                 console.log("response:",response.data);
                 resetForm();
             }
