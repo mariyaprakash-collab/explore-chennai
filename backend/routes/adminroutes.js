@@ -5,6 +5,6 @@ const {
     loginadmin,
 } = require("../controllers/logincontroller")
 
-router.get("/login", loginadmin)
+router.post("/login", loginadmin)
 
 module.exports = router;

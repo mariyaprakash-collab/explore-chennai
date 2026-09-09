@@ -1,15 +1,25 @@
 const admindetail = require("../models/admindetail");
 
-const getAdmin = async(req,res) =>{
-        const {formemail,formpassword}=req.body;
-        const account=await admindetail.findone({email:formemail})
+const loginadmin = async(req,res) =>{
+        const {email,password}=req.body;
+        const account=await admindetail.findOne({email})
         if (!account){
-            console.log("invalid email or password")
+            return res.status(401).json({
+                message: "Invalid email or password"
+            })
         }
-        if (formpassword === account.password) {
-            console.log("logged in succesfully")
+        if (password === account.password) {
+            return res.status(200).json({
+                message:"Logged in successfully"
+            })
         }
         else{
-            console.log("invalid email or password")
+            return res.status(401).json({
+                message: "Invalid email or password"
+            })
         }
 }
+
+module.exports={
+    loginadmin,
+};

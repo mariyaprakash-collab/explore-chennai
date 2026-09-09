@@ -14,7 +14,7 @@ const Login = () =>{
                 console.log("response:",response.data);
                 resetForm();
             }
-            catch{
+            catch(error){
                 console.error("error msg:",error);
             }
         }
@@ -32,6 +32,7 @@ const Login = () =>{
                                 type="email"
                                 id="email"
                                 placeholder="email"
+                                name="email"
                             />
                         </div>
                         <div className="inputtag">
@@ -42,6 +43,7 @@ const Login = () =>{
                                 type="password"
                                 id="password"
                                 placeholder="password"
+                                name="password"
                             />
                         </div>                  
                         <div className="buttons">

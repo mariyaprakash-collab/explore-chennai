@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 
 app.use("/places",placeRoutes);
 
-app.post("/admin",adminroutes);
+app.use("/admin",adminroutes);
 
 const PORT = process.env.PORT || 5000;
 
