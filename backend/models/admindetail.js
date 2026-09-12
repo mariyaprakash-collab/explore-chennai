@@ -7,4 +7,4 @@ const adminschema = new mongoose.Schema(
     }
 )
 
-module.exports=mongoose.model("admindetail",adminschema)
+module.exports=mongoose.model("admins",adminschema)
