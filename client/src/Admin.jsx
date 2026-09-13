@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import {useState} from "react";
 import Login from "./Login";
 import Register from "./Signup";
@@ -24,6 +25,7 @@ function Admin() {
                 </h2>
             </div>
             {formname === "login" ? <Login /> : <Register/>}
+            <Outlet/>
         </div>
     )
 }

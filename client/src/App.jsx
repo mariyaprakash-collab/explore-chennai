@@ -18,7 +18,9 @@ function App(){
         <Route path="/parks&zoos" element={<Category category="parks"/>}/>
         <Route path="/museums" element={<Category category="museums"/>}/>
         <Route path="/foods" element={<Category category="food"/>}/>
-        <Route path="/admin" element={<Admin />}/>
+        <Route path="/admin" element={<Admin />}>
+          <Route path="beaches" element={<Category category="beaches"/>}/>
+        </Route>
         <Route path="*" element={<Errorhandler  message={"The page you are looking for doesn't exist..."}/>} />
       </Routes>
     </>
